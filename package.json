@@ -1,0 +1,33 @@
+{
+  "name": "node.js-onboarding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "eslint .",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yakiv-artiukhov/node.js-onboarding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yakiv-artiukhov/node.js-onboarding/issues"
+  },
+  "homepage": "https://github.com/yakiv-artiukhov/node.js-onboarding#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
