@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "check": "eslint .",
-    "start": "node server.js",
+    "startMain": "node mainServer.js",
+    "startAuth": "node authServer.js",
+    "devMain": "nodemon mainServer.js",
+    "devAuth": "nodemon authServer.js",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +25,8 @@
   "devDependencies": {
     "@eslint/js": "^9.23.0",
     "eslint": "^9.23.0",
-    "globals": "^16.0.0"
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.9"
   },
   "dependencies": {
     "axios": "^1.8.4",

@@ -1,0 +1,45 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlciIsImlhdCI6MTc0NDEyNDgwNSwiZXhwIjoxNzQ0MTI4NDA1fQ.3Q3_HTtAqOuydLqHM9xNfeCeZJXmb77JK9kElKmWWj8
+
+###
+
+POST http://localhost:8142/api/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password"
+}
+
+###
+
+GET http://localhost:8142/api/echo
+
+###
+
+GET http://localhost:8141/api/time
+
+###
+
+GET http://localhost:8141/api/weather
+Authorization : Bearer {{token}}
+
+###
+
+GET http://localhost:8141/api/crypto
+Authorization : Bearer {{token}}
+
+###
+
+
+GET http://localhost:8141/api/forex
+Authorization : Bearer {{token}}
+
+###
+
+POST http://localhost:8141/api/sort
+Content-Type: application/json
+Authorization : Bearer {{token}}
+
+["banana", "apple", "cherry"]
+
+###
